@@ -57,5 +57,8 @@ for i in range(0, 10):
 plt.loglog(steps, err_rect,color="r",label="rectangle error")
 plt.loglog(steps, err_trap, color="g", label="trapeze error")
 plt.loglog(steps, err_simpson, color='b', label='simpson error')
+plt.xlabel("log(step)")
+plt.ylabel("log(error)")
 plt.legend()
+plt.savefig("error.png")
 plt.show()
